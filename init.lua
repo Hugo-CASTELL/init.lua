@@ -1,1 +1,3 @@
-require("hugocastell")
+require('editor')
+require('remaps')
+require('lazynvim')
