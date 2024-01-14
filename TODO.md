@@ -1,2 +1,2 @@
 [ ] Add **which key** configuration
-[ ] Add **copilot** configuration
+[x] Add **copilot** configuration
