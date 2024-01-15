@@ -15,3 +15,4 @@ vim.opt.rtp:prepend(lazypath)
 -- Lazy nvim step 2
 require("lazy").setup("plugins")
 
+-- write down a joke
