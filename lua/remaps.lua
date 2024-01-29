@@ -22,6 +22,8 @@ vim.keymap.set("n", "''", "''zz")
 
 -- Formatting
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("v", "<", "<gvzz")
+vim.keymap.set("v", ">", ">gvzz")
 
 -- Yanking/Pasting
 vim.keymap.set("n", "<C-Y>", "0p<ESC>")
