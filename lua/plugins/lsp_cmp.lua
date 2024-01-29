@@ -21,7 +21,17 @@ return {
     },
 
     -- Mason 
-	{'williamboman/mason.nvim'},
+    {
+        'williamboman/mason.nvim',
+        opts = {
+            ensure_installed = {
+                'lua_ls',
+                'pyright',
+                'rust_analyzer',
+                'tsserver',
+            },
+        },
+    },
 	{'williamboman/mason-lspconfig.nvim'},
 
     -- Copilot
@@ -29,9 +39,10 @@ return {
         'github/copilot.vim',
         init = function()
             vim.g.copilot_no_tab_map = true
+            vim.g.copilot_assume_mapped = true
         end,
         config = function()
-            vim.keymap.set('i', '<C-e>', [[copilot#Accept("\<CR>")]], {
+            vim.keymap.set('i', 'œ', [[copilot#Accept("\<CR>")]], {
                 silent = true,
                 expr = true,
                 script = true,

@@ -24,13 +24,11 @@ vim.keymap.set("n", "''", "''zz")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Yanking/Pasting
-vim.keymap.set("n", "<C-y>", "0p<ESC>")
+vim.keymap.set("n", "<C-Y>", "0p<ESC>")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- Searching
 vim.keymap.set("n", "n", "nzzzv")
@@ -41,6 +39,7 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- Saving and undo/redo
 vim.keymap.set("n", "<C-w>", ":wq!<ESC>")
 vim.keymap.set("n", "<C-s>", ":w!<ESC>")
+vim.keymap.set("i", "<C-s>", "<ESC>:w!<ESC>")
 
 vim.keymap.set("n", "U", "<C-R>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
